@@ -30,13 +30,26 @@ public class Main {
             System.out.println("Pelicula retro que vale la pena ver");
         }
 
-        for (int i = 0; i < 3; i++){
+        double i = 0;
+        while( i < 3){
             Scanner teclado = new Scanner(System.in);
             System.out.println("Ingresa la nota que le darias a Matrix");
             double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
+            mediaEvaluacionUsuario += notaMatrix/3;
+            i++;
         }
-        System.out.println("la media de la pelicula "+
-                "Matrix calculada por el usuario es: " + mediaEvaluacionUsuario /3);
+        System.out.println("la media de la pelicula " +
+                "Matrix calculada por el usuario es: " + mediaEvaluacionUsuario);
+
     }
 }
+                   // Metodo con el Bucle for.
+
+// for (int i = 0; i < 3; i++){
+//Scanner teclado = new Scanner(System.in);
+//            System.out.println("Ingresa la nota que le darias a Matrix");
+//double notaMatrix = teclado.nextDouble();
+//mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
+//        }
+//                System.out.println("la media de la pelicula "+
+//                                           "Matrix calculada por el usuario es: " + mediaEvaluacionUsuario /3);
