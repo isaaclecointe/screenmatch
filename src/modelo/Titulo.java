@@ -8,8 +8,17 @@ public class Titulo {
     private boolean incluidoEnPlanBasico;
     private String sinopsis;
     private int tiempoDeDuracionEnMinutos;
+    private int tiempoLibre;
 
 
+
+    public int getTiempoLibre() {
+        return tiempoLibre;
+    }
+
+    public void setTiempoLibre(int tiempoLibre) {
+        this.tiempoLibre = tiempoLibre;
+    }
 
     public String getNombre() {
         return nombre;
@@ -59,10 +68,12 @@ public class Titulo {
     public void muestraFichaTecnica(){
         System.out.println("****FICHA TECNICA****");
         System.out.println("Nombre del titulo: " + nombre);
-        System.out.println("Feccha de lanzamiento: " + fechaDeLanzamiento);
+        System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
         System.out.println("Tiempo de Duracion: " + getTiempoDeDuracionEnMinutos() + " minutos");
 
-
-
     }
+
+
+
+
 }
