@@ -13,7 +13,7 @@ public class Principal extends PeliculaOSerie {
         Scanner teclado = new Scanner(System.in);
         while(opcion != 9){
             String menu = """
-                   Bienvenido a screenmatch
+                   Bienvenido a screenmatch ingresa el numero de la opcion que deseas utilizar.
                    1) Registrar nueva Pelicula
                    2) Registrar nueva Serie
                    3) Calcular Maraton de Peliculas
